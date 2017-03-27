@@ -1,21 +1,10 @@
-import React from 'react';
-import { connect } from 'react-redux';
-
-function Navigator(props) {
+export default function Navigator(props) {
 	function currentRoute() {
 		return props.routeStack.slice(-1)[0];
 	}
 
 	return props.routes[currentRoute()].screen(props);
 }
-
-function mapStateToProps(state) {
-	return {
-		routeStack: state.routeStack
-	};
-}
-
-export default connect(mapStateToProps)(Navigator);
 
 export function createReducer(options) {
 	const { defaultRoute } = options;
