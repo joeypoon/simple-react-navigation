@@ -1,21 +1,20 @@
 {
-  "name": "redux-navigation",
-  "version": "1.0.0",
+  "name": "simple-react-navigation",
+  "version": "0.0.1",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "build": "babel src -d dist"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/joeypoon/redux-navigation.git"
+    "url": "git+https://github.com/joeypoon/simple-react-navigation.git"
   },
   "author": "Joey F. Poon",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/joeypoon/redux-navigation/issues"
+    "url": "https://github.com/joeypoon/simple-react-navigation/issues"
   },
-  "homepage": "https://github.com/joeypoon/redux-navigation#readme",
+  "homepage": "https://github.com/joeypoon/simple-react-navigation#readme",
   "devDependencies": {
     "babel-cli": "6.24.0",
     "babel-preset-env": "1.2.2",
