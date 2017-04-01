@@ -1,6 +1,6 @@
 {
   "name": "simple-react-navigation",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "scripts": {
     "build": "babel src -d ./"

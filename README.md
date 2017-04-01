@@ -8,7 +8,8 @@ npm install simple-react-navigation
 
 ### Setup
 
-		// App.js
+App.js
+
 		import React from 'react';
 		import { Provider } from 'react-redux';
 
@@ -24,7 +25,8 @@ npm install simple-react-navigation
 		}
 
 
-		// Main.js
+Main.js
+
 		import React from 'react';
 		import { connect } from 'react-redux';
 		import Navigator from 'simple-react-navigation';
@@ -44,7 +46,8 @@ npm install simple-react-navigation
 		export default connect(mapStateToProps)(Main);
 
 
-		// routeStack.reducer.js
+routeStack.reducer.js
+
 		import { createReducer } from 'simple-react-navigation';
 
 		const options = {
@@ -53,7 +56,8 @@ npm install simple-react-navigation
 		export default createReducer(options);
 
 
-		// routes.js
+routes.js
+
 		import Home from './components/Home';
 		import Foo from './components/Foo';
 
@@ -62,7 +66,8 @@ npm install simple-react-navigation
 			Foo: { screen: Foo }
 		};
 
-		// routeStack.actions.js
+routeStack.actions.js
+
 		const NAVIGATE = 'NAVIGATE';
 		const NAVIGATE_BACK = 'NAVIGATE_BACK';
 
@@ -81,7 +86,8 @@ npm install simple-react-navigation
 
 ### Usage
 
-		// Home.component.js
+Home.component.js
+
 		import React from 'react';
 		import { connect } from 'react-redux';
 
@@ -102,7 +108,8 @@ npm install simple-react-navigation
 		export default connect(null, actions)(Home);
 
 
-		// Foo.component.js
+Foo.component.js
+
 		import React from 'react';
 		import { connect } from 'react-redux';
 
