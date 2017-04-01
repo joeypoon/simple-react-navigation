@@ -1,17 +1,13 @@
 import React, { createElement } from 'react';
 
 export default class Navigator extends React.Component {
-	constructor(props) {
-		super(props);
-	}
-
 	currentRoute() {
 		return this.props.routeStack.slice(-1)[0];
 	}
 
 	render() {
-		const { routes } = this.props;
-		return createElement(routes[this.currentRoute()].screen, props);
+		const element = this.props.routes[this.currentRoute()].screen;
+		return createElement(element, this.props);
 	}
 }
 
