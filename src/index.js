@@ -6,7 +6,7 @@ export default class Navigator extends React.Component {
 	}
 
 	render() {
-		const element = this.props.routes[this.currentRoute()].screen
+		const element = this.props.routes[this.currentRoute()].screen;
 		return createElement(element, this.props);
 	}
 }
