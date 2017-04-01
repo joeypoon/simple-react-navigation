@@ -25,9 +25,23 @@ npm install simple-react-navigation
 
 
 		// Main.js
+		import React from 'react';
+		import { connect } from 'react-redux';
+		import Navigator from 'simple-react-navigation';
+
+		import { routes } from '../routes';
+
 		function Main(props) {
 			return <Navigator routeStack={ props.routeStack } routes={ routes } />
 		}
+
+		function mapStateToProps(state) {
+			return {
+				routeStack: state.routeStack
+			};
+		}
+
+		export default connect(mapStateToProps)(Main);
 
 
 		// routeStack.reducer.js
