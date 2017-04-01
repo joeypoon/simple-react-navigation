@@ -2,7 +2,7 @@ import React, { createElement } from 'react';
 
 export default class Navigator extends React.Component {
 	currentRoute() {
-		return props.routeStack.slice(-1)[0];
+		return this.props.routeStack.slice(-1)[0];
 	}
 
 	render() {
